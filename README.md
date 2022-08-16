@@ -17,4 +17,4 @@ None
 
 ## License
 
-LISCENSE file in github repository
+LICENSE file in github repository
