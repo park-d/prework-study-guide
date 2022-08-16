@@ -17,35 +17,87 @@
 
     <main>
       <section class="card" id="html-section">
-        <h2>HTML</h2>
+        <h2><u>HTML</u></h2>
+        <br>
         <ul>
+          <li>HTML creatures the structure of a webpage.</li>
+          <li>Common element types are: text elements, image elements, header elements, and list elements.</li>
           <li>The head element contains information about the webpage.</li>
+            <ul>
+              <li class="tabbed">The charset element sets our character encoding.</li>
+              <li class="tabbed">The http-equiv element sets an HTTP header for content.</li>
+              <li class="tabbed">The viewport element sets the default view for our webpage.</li>
+            </ul>
+          </li>
           <li>The body element represents the visible content shown to the user.</li>
+            <ul>
+              <li class="tabbed">The <code>header</code> appears at the top of the page and usually contains a navigation menu and/or introductory content. </li>
+              <li class="tabbed">The <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, and <code>h6</code> elements represent the level of heading a given text block represents. Headings are exactly what they sound like: larger or more prominent titles and subtitles to organize a page.</li>
+              <li class="tabbed">The <code>p</code> element represents a paragraph or block of text. You'll use this element extensively to wrap most of the text on your webpages. </li>
+              <li class="tabbed">The <code>ul</code>, <code>ol</code>, <code>li</code> elements represent unordered lists, ordered lists, and list items. In essence, these HTML elements represent bulleted or numbered lists.</li>
+              <li class="tabbed">The <code>img</code> element contains information about images that are displayed on the webpage. The  <code>img</code> element can contain various attributes; the src attribute is the most important because it defines the location of the image.</li>
+              <li class="tabbed">The <code>br</code> element creates a line of empty space, or a line break, between two blocks of content.</li>
+              <li class="tabbed">The <code>a</code> element (which stands for anchor) creates links to the same webpage or other webpages. The href attribute points to the URL for the link.</li>
+              <li class="tabbed">The <code>footer</code> appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.</li>
+              <li class="tabbed"><code>section</code> elements are semantic elements that define a section in a document that contains thematic content.</li>
+            </ul>
+          <li>The style element defines the CSS styles associated with a website.</li>
+          <li>The base element defines the base URL for a webpage.</li>
+          <li>The link element connects an external resource to the HTML document.</li>
+          <li>The meta element defines metadata such as the character set, description, keywords, author, and viewport.</li>
+          <li>The script element embeds client-side scripts in the HTML document.</li>
+          <li>HTML attributes are always defined in the beginning element, never the closing element.</li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
-        <h2>CSS</h2>
+        <h2><u>CSS</u></h2>
         <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
-        </ul>
+          <li>The <code>margin</code> property acts much like a margin in a word processing document. It indicates how much space is around the outside of an element. The margin is not visible on the page; it merely adds a buffer. When the <code>margin</code> property to 0, there is NO extra space around the element.</li>
+          <li>The <code>padding</code> property is often confused with <code>margin</code>, but it is not the same thing. The padding property adds space around the content inside an element. When padding is increased, the entire element is bigger. That is because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer outside an element.</li>
+					<li>Do Not Repeat Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained. DRY can greatly reduce the overall size and complexity of a codebase.</li>
+					<li><code>text-align</code> is a positioning property. This is one way to center a title or heading on a webpage.</li>
+				</ul>
       </section>
 
       <section class="card" id="git-section">
-        <h2>Git</h2>
+        <h2><u>Git</u></h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li><code>git status</code>: checks what branch we are currently on</li>
+          <li><code>git checkout -b branch-name</code>: creates a new branch and switches to it</li>
+          <li>Steps and code for syncing our GitHub repository with working progress:</li>
+						<ol>
+							<li class="numlist">Add and commit your files, and make sure to include a commit message. <code>git add -A</code>, <code>git commit -m “your message here”</code></li>
+							<li class="numlist">Pull in the base branch, main. <code>git pull origin main</code></li>
+							<li class="numlist">Push up your feature branch. <code>git push origin feature/branch-name</code></li>
+						</ol>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
+        <h2><u>JavaScript</u></h2>
         <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Control flow is the order in which a computer executes code in a script.</li>
-        </ul>
+          <li>A variable (<code>var</code>) is a named container that allows us to store data in our code.</li>
+					<li>All strings are surrounded by quotation marks <code>"</code> and each line of JavaScript code ends with a semicolon <code>;</code></coide>.</li>
+					<li>The <code>console.log</code> method is used to output a message to the web console by adding an <b>argument</b>.</li>
+					<li>Control flow is the order in which a computer executes code in a script.</li>
+					<li>The strict equality operator (<code>===</code>) checks to see if two values are equal, and returns a Boolean result <code>true</code> if the values are equal and <code>false</code> if the values are not equal.</li>
+					<li>An <b>array</b> is a single variable that is used to hold a group of data. 
+						<ul>
+							<li class="tabbed">Arrays are typically used to hold data that is related in some way. </li>
+							<li class="tabbed">They are created with brackets (<code>[]</code>). </li>
+							<li class="tabbed">Arrays are zero-indexed and sequential.</li>
+						</ul>
+					<li>A <code>for</code> loop contains the following three important statements:</li>
+						<ol>
+							<li class="numlist">The first statement determines the <b>starting point for our loop</b>. If starting at the beginning of the array, declare a variable <code>x</code> and give it a value of <code>0</code>.</code></li>
+							<li class="numlist">The second statement is the <b>condition</b>. As long as the number in the variable <code>x</code> is less than the length of the array, the loop will keep running. This will allow the loop to execute one time for each item in the array.</li>
+							<li class="numlist">The final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increases by <code>1</code> each time. The code <code>x++</code> is a shortcut way of writing <code>x+1</code>.</li>
+						</ol>
+					<li>To create a function, use the <code>function</code> keyword, then give it a unique name to call the function.</li>
+					<li>A function's name is followed by parentheses <code>()</code> used to define parameters that can be placed inside the parentheses.</li>
+					<li>To call a function, use the name of the function in the JavaScript file where the code will execute.</li>
+				</ul>
       </section>
     </main>
 
